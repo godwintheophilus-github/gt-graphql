@@ -1,0 +1,22 @@
+{
+  "name": "gt-graphql",
+  "version": "1.0.0",
+  "description": "This repository is created to understand GraphQL better",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godwintheophilus-github/gt-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/godwintheophilus-github/gt-graphql/issues"
+  },
+  "homepage": "https://github.com/godwintheophilus-github/gt-graphql#readme",
+  "dependencies": {
+    "graphql": "^16.8.1"
+  }
+}
