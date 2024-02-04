@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/godwintheophilus-github/gt-graphql#readme",
   "dependencies": {
+    "@apollo/server": "^4.10.0",
     "graphql": "^16.8.1"
   }
 }
