@@ -1,15 +1,11 @@
-var { graphql, buildSchema } = require("graphql")
+import { ApolloServer } from "@apollo/server"
+import { startStandaloneServer } from "@apollo/server/standalone"
 
-var schema = buildSchema(`
-  type Query {
-    hello: String
-  }
-`)
-
-var rootValue = { hello: () => "Hello world!" }
-
-var source = "{ hello }"
-
-graphql({ schema, source, rootValue }).then(response => {
-    console.log(response)
+const server = new ApolloServer({
+    typeDefs,
+    resolvers,
 })
+
+const { url } = await startStandaloneServer(server)
+
+console.log(`🚀 Server ready at ${url}`)
